@@ -1,0 +1,264 @@
+/* CSS Reset */
+html{
+    scroll-behavior:smooth;
+}
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+#navbar{
+    display: flex;
+    align-items: center;
+    position: sticky;
+    top: 0px;
+}
+
+#navbar::before{
+    content:"";
+    background-color: rgb(0, 0, 0);
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.5;
+}
+/* navigation bar : logo and image */
+#logo{
+    margin: 10px 20px;
+}
+#logo img{
+    height: 56px;
+    margin: 3px 6px;
+    border-radius: 57px;
+}
+
+/* navigation bar : list styling */
+
+#navbar ul{
+    display: flex;
+}
+
+#navbar ul li{
+    display: flex;
+    /* border: 2px solid black; */
+    /* padding: 20px; */
+    font-size: 1.2rem;
+    padding: 15px;
+}
+
+#navbar ul li a{
+    display: flex;
+    color: white;
+    display: block;
+    padding: 2px ;
+    border-radius: 10px;
+    text-decoration: none;
+}
+
+#navbar ul li a:hover{
+    background-color: rgb(89, 89, 89);
+    /* color: rgb(219, 218, 218); */
+    display: block;
+}
+
+/* home section ki css yaha se shuru ho rhi hai  */
+
+#home{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    height: 244px;
+}
+
+#home::before{
+    content: "";
+    background: url(banner2.png) no-repeat center center/cover;
+    position: absolute;
+    width: 100%;
+    height: 70%;
+    z-index: -1;
+    opacity: 0.89;
+}
+
+#home h1{
+    padding: 1px;
+}
+
+.home-content{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+}
+
+#home p{
+    font-family: 'Lobster', cursive;
+    padding: 2px;
+    font-size: 1.1rem;
+}
+
+/* button ki css yaha se shuru hai  */
+
+.btn{
+    display: block;
+    border-radius: 10px;
+    margin-top: 10px;
+    padding: 3px;
+    
+}
+.btn:hover{
+    cursor: pointer;
+    background-color: grey;
+    color: white;
+}
+
+/* Our services ki css yaha se shuru hai  */
+
+#service{
+    margin: 30px;
+    display: flex;
+}
+
+#service .box{
+    border: 3px solid rgb(245, 2, 2);
+    background-color: rgba(102, 100, 100, 0.132);
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 331px;
+    padding: 34px;
+    margin: 10px;
+}
+
+/* #service .box p{
+    padding: 10px;
+    padding-bottom: 10px;
+} */
+
+#service .box img{
+    display: block;
+    padding: 10px;
+    margin: auto;
+    height: 100px;
+}
+
+/* client ki css yaha se shuru ho rhi hai ok ? */
+
+.client-container{
+    /* position: relative; */
+    height: 400px;
+}
+.client-container h1{
+    color: rgba(255, 255, 255, 0.898);
+}
+
+.client-container::before{
+    content: "";
+    background: url(clientback.png) no-repeat center center/cover;
+    position: absolute;
+    width: 100%;
+    height: 388px;
+    z-index: -1;
+    opacity: 0.9;
+}
+
+.client{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.client-img{
+    /* transition: all ease 1s; */
+    /* transition: all ease 0.89s; */
+    display: flex;
+    /* width: 100px; */
+    height: 170px;
+    padding: 34px;
+}
+
+
+/* .client-img:hover{
+    display: block;
+    width: 175px;
+    height: 200px;
+} */
+
+/* Contact Us ki CSS yaha se shuru ho rha hai  */
+
+.contactus-container{
+    margin-bottom: 20px;
+    margin-top: 19px;
+    padding-bottom: 10px;
+    position: relative;
+}
+
+.contactus-container::before{
+    content: "";
+    position: absolute;
+    background: url(contactus.png)no-repeat center center/cover;
+    width: 100%;
+    height: 514px;
+    z-index: -1;
+    opacity: 0.46;
+}
+
+.form-group{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid black;
+    padding: 10px;
+    margin: 10px;
+}
+
+.contactus-container form input{
+    width: 300px;
+}
+
+.contactus-container form textarea{
+    padding: 3px;
+    width: 300px;
+}
+
+
+.form-group label{
+    font-size: 1.0rem;
+    font-family: 'Baloo Bhai';
+}
+
+/* footer ki css yaha se shuru ho rhi hai  */
+
+footer{
+    background-color: black;
+    color: white;
+    margin-top: 33px;
+}
+
+
+/* Utility classess */
+
+.h-primary{
+    font-family: 'Baloo Bhai';
+    font-size: 2.5rem;
+}
+.h2-primary{
+    font-family: 'Baloo Bhai';
+    font-size: 1.8rem;
+}
+
+.center{
+    display: flex;
+    /* flex-direction: column; */
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* Tranisition classes ki css yaha se shuru ho rhi hai  */
+
